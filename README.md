@@ -10,7 +10,7 @@
 
 ## ✨ Especificações de funcionalidades:  
 
-  - Consumir a API https://testapi.io/api/redealumni/scholarships  
+  - Consumir a API https://testapi.io/api/Jonas-buriti/scholarships
 
   - O projeto possui uma única página com a listagem dos itens e uma modal ou página para exibição dos detalhes do curso;  
 
