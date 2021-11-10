@@ -10,10 +10,13 @@
 
 ## ✨ Especificações de funcionalidades:  
 
+### Obrigatórios
+
   - Consumir a API https://testapi.io/api/Jonas-buriti/scholarships
 
   - O projeto possui uma única página com a listagem dos itens e uma modal ou página para exibição dos detalhes do curso;  
 
+### Opcionais
   - A listagem deve retornar paginação de 10 em 10 em ordem alfabética (pode usar um componente Vue de tabela), com possibilidade de ordenação. Só deve retornar os itens         “Enabled    = True”:  
 
   - Exibir inputs para possibilitar uma Busca por:  
@@ -34,7 +37,6 @@
 
        - Ao ocorrer um erro, trata-lo exibindo uma mensagem na própria interface após o botão de “Buscar” e, preferencialmente, tornar o input com erro com background vermelho.  
 
- 
 
 ## 📋 A tabela deve exibir as colunas:  
 
@@ -76,7 +78,9 @@
 
 ## ✅ Requisitos do projeto:  
 
-  - Utilizar Bootstrap (ou framework de preferencial), Vue.JS ou React e Sass;  
+### Obrigatórios
+
+  - Utilizar Bootstrap (ou framework de preferencial), 
 
   - Utilizar regra de validação do campo com JS;  
 
@@ -84,6 +88,11 @@
 
   - O projeto precisa ser responsivo.  
 
+### Opcionais
+
+  - Utilizar Sass
+  
+  - Utilizar Vue.JS ou React;
  
 
 ## 🎨 Especificações de design:  
