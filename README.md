@@ -2,9 +2,9 @@
 
   - Desenvolva e versione esse projeto usando git.  
 
-  - Utilize o serviço de hospedagem de código de sua preferência: github, bitbucket, gitlab ou outro.  
+  - Opcional: Utilize o serviço de hospedagem de código de sua preferência: github, bitbucket, gitlab ou outro. 
 
-  - Crie um README com instruções claras sobre como executar seu projeto. (precisa?)  
+  - Crie um README com instruções claras sobre como executar seu projeto.  
 
  
 
