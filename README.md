@@ -23,17 +23,17 @@ Seja bem vindo ao teste para Fullstack da **SimbioX** 💙
 
   Exibir cards com dados como **_nome, espécie, imagem, altura e peso_**
 
-📝 Sugestão API https://pokeapi.co/
+  📝 Sugestão API https://pokeapi.co/
 
-###### 🥰 Diferenciais
+  ###### 🥰 Diferenciais
 
-- Paginação com 10 itens por página;
-- Cards com id, nome, imagem, titulo;
-- Tratar os itens sem imagens, utilizando imagem padrão;
-- Criar um filtro para busca por nome e espécie;
-- O projeto precisa ser responsivo;
-- Desenvolver em TypeScript;
-- Criar uma página de perfil para os personagens;
+  - Paginação com 10 itens por página;
+  - Cards com id, nome, imagem, titulo;
+  - Tratar os itens sem imagens, utilizando imagem padrão;
+  - Criar um filtro para busca por nome e espécie;
+  - O projeto precisa ser responsivo;
+  - Desenvolver em TypeScript;
+  - Criar uma página de perfil para os personagens;
 
 ## 💻 Instruções para entrega do projeto:
 
