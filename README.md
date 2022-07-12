@@ -1,128 +1,51 @@
-## 💻 Instruções para entrega do projeto:  
+## Teste - Fullstack
 
-  - Desenvolva e versione esse projeto usando git.  
+Olá Dev, tudo bem?
+Seja bem vindo ao teste para Fullstack da **SimbioX** 💙
 
-  - Opcional: Utilize o serviço de hospedagem de código de sua preferência: github, bitbucket, gitlab ou outro. 
+- Este teste será dividido em _dois itens_ e você pode utilizar frameworks como **VueJS** ou **React** e fique a vontade para escolher as **libs** que preferir 🤓!
 
-  - Crie um README com instruções claras sobre como executar seu projeto.  
+## 🎯 Obrigatorios
 
- 
+---
 
-## ✨ Especificações de funcionalidades:  
+- #### **Item 1**
 
-### Obrigatórios
+  Faça uma **_API REST_** simples, com apenas um método, devolvendo uma listagem de Pokemon mockada.
 
-  - Consumir a API https://pokeapi.co/
+  ###### 🥰 Diferenciais
 
-  - O projeto possui uma única página com a listagem dos itens e uma modal ou página para exibição dos detalhes do curso;  
+  - Conectar no Sharepoint e obter isso de uma lista, e ter mais um método que insira novos pokemons.
 
-### Opcionais
-  - A listagem deve retornar paginação de 10 em 10 em ordem alfabética (pode usar um componente Vue de tabela), com possibilidade de ordenação. Só deve retornar os itens         “Enabled    = True”:  
+---
 
-  - Exibir inputs para possibilitar uma Busca por:  
+- #### **Item 2**
 
-    - Cidade;  
+  Desenvolver uma **_aplicação_** que consuma a **_api Pokémon_**, e exiba isso em uma listagem de cards.
 
-    - Curso;  
+  > Exibir cards com dados como **_nome, espécie, imagem, altura e peso_**
 
-    - Preço;  
+      > Sugestão API https://pokeapi.co/
 
-    ### ➕ Adicione algumas regras de validação:  
+      ###### 🥰 Diferenciais
 
-       - Cidade = obrigatório  
+  - Paginação com 10 itens por página;
+  - Cards com id, nome, imagem, titulo;
+  - Tratar os itens sem imagens, utilizando imagem padrão;
+  - Criar um filtro para busca por nome e espécie;
+  - O projeto precisa ser responsivo;
+  - Desenvolver em TypeScript;
+  - Criar uma página de perfil para os personagens;
 
-       - Preço = opcional, Mascara de número;  
+  ***
 
-       - Curso = opcional, não deve aceitar número;  
+## 💻 Instruções para entrega do projeto:
 
-       - Ao ocorrer um erro, trata-lo exibindo uma mensagem na própria interface após o botão de “Buscar” e, preferencialmente, tornar o input com erro com background vermelho.  
+- Desenvolva e versione esse projeto usando git.
+- Crie um README com instruções claras sobre como executar seu projeto.
+  ###### 🥰 Diferenciais
+  - Hospedar a página (Github, Vercel, Netlify, Heroku, ou de sua preferência);
 
+---
 
-## 📋 A tabela deve exibir as colunas:  
-
-  - Logo  
-
-  - Nome do Curso  
-
-  - Cidade  
-
-  - Preço  
-
-  - Botão / link de visualização dos Detalhes  
-
- 
-
-## 📄 Página de Exibição dos Detalhes do Curso (ou modal):  
-
-  ### Na página / Modal criada, deve exibir em uma diagramação:  
-
-  - Logo (alinhado à esquerda)  
-
-  - Ao lado:  
-
-    - Curso (Titulo) – Kind  
-
-    - Level (subtítulo)  
-
-  - Abaixo em uma nova linha, em 2 colunas:  
-
-    - Nome Universidade / Score Universidade  
-
-    - Campos Nome / Campus Cidade  
-
-  - Após, em uma linha, com uma única coluna:  
-
-    - Preço  
-
- 
-
-## ✅ Requisitos do projeto:  
-
-### Obrigatórios
-
-  - Utilizar Bootstrap (ou framework de preferencial), 
-
-  - Utilizar regra de validação do campo com JS;  
-
-  - Gerenciadores de pacotes e task runners podem ser usados à vontade.  
-
-  - O projeto precisa ser responsivo.  
-
-### Opcionais
-
-  - Utilizar Sass
-  
-  - Utilizar Vue.JS ou React;
- 
-
-## 🎨 Especificações de design:  
-
-  ### Fonte  
-
-   - Importe e utilize a fonte no css https://fonts.google.com/specimen/Roboto  
-
-  ### Título  
-
-   - Azul principal: #18ACC4 <h1>  
-
-   - Azul secundário: #007A8D <h2>  
-
-  ### Input  
-
-   - Preto (inputs): #1F2D30   
-
-   - Cinza (background): #ddd  
-
-  ### Textos  
-
-   - Cinza escuro: #555 <p>  
-
-  ### Body  
-
-   - Cinza claro: #eee;  
-
-  ### Imagens  
-
-   - Altura máxima 150px;  
-
-   - Borda azul escura;  
+![This is an image](https://media-exp1.licdn.com/dms/image/C4D0BAQEovOvpWJHBZA/company-logo_200_200/0/1609947840923?e=1665619200&v=beta&t=Aa9tmalDZeXeZZ5TNQEnFeqfLqajD0W_Sf8dM0TQIB4)
