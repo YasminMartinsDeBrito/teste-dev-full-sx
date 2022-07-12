@@ -9,7 +9,8 @@ Seja bem vindo ao teste para Fullstack da **SimbioX** 💙
 
 - #### **Item 1**
 
-  Faça uma **_API REST_** simples, com apenas um método, devolvendo uma listagem de Pokemon mockada.
+  Faça uma **_API REST_** simples, com apenas um método, devolvendo uma listagem de Pokemon utilizando a API do
+  📝 **https://pokeapi.co/**
 
   ###### 🥰 Diferenciais
 
@@ -19,11 +20,9 @@ Seja bem vindo ao teste para Fullstack da **SimbioX** 💙
 
 - #### **Item 2**
 
-  Desenvolver uma **_aplicação_** que consuma a **_api Pokémon_**, e exiba isso em uma listagem de cards.
+  Desenvolver uma **_aplicação_** que utilize a **_API_** desenvolvida no **item 1** como fonte dos dados, e exiba isso em uma listagem de cards.
 
   Exibir cards com dados como **_nome, espécie, imagem, altura e peso_**
-
-  📝 Sugestão API https://pokeapi.co/
 
   ###### 🥰 Diferenciais
 
