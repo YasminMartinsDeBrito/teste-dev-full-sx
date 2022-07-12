@@ -7,8 +7,6 @@ Seja bem vindo ao teste para Fullstack da **SimbioX** 💙
 
 ## 🎯 Obrigatorios
 
----
-
 - #### **Item 1**
 
   Faça uma **_API REST_** simples, com apenas um método, devolvendo uma listagem de Pokemon mockada.
@@ -36,8 +34,6 @@ Seja bem vindo ao teste para Fullstack da **SimbioX** 💙
   - O projeto precisa ser responsivo;
   - Desenvolver em TypeScript;
   - Criar uma página de perfil para os personagens;
-
-  ***
 
 ## 💻 Instruções para entrega do projeto:
 
