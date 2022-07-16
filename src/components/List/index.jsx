@@ -10,12 +10,12 @@ const PokemonList = () => {
     !pokemons || !searchs
       ? pokemons
       : pokemons.filter(({ name }) =>
-          name.toLowerCase().includes(s)
+          name.toLowerCase().includes(searchs)
         );
 
   useEffect(() => {
     fetch('https://pokeapi.co/api/v2/pokemon/')
-      .then((r) => r.json())
+      .then((res) => res.json())
       .then((json) => {
         setPokemons(json.results);
       });
