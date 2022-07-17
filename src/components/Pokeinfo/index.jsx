@@ -8,7 +8,8 @@ const Pokeinfo = ({ data }) => {
         <>
           <h1>{data.name}</h1>
           <img
-            src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/${data.id}.png`}
+            // src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/${data.id}.png`}
+            src={data.img}
             alt={data.name}
           />
           <div>
