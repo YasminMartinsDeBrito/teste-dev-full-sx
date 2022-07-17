@@ -1,8 +1,9 @@
+
 const Pokeinfo = ({ data }) => {
   return (
     <>
       {!data ? (
-        ""
+        "Nao tem nada"
       ) : (
         <>
           <h1>{data.name}</h1>

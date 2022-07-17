@@ -28,6 +28,7 @@ const Main = () => {
       setPokeData((state) => {
         state = [...state, poke.data];
         state.sort((a, b) => (a.id > b.id ? 1 : -1));
+        
         return state;
       });
     });
