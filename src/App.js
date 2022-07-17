@@ -6,6 +6,7 @@ const App = () => {
   const [pokemons, setPokemons] = useState([]);
   const [load, setLoad] = useState(
     "https://pokeapi.co/api/v2/pokemon?limit=10"
+    // "https://localhost:9000/api/v2/pokemon?limit=10"
   );
 
   const getPokemons = async () => {
@@ -18,6 +19,7 @@ const App = () => {
       result.forEach(async (pokemon) => {
         const res = await fetch(
           `https://pokeapi.co/api/v2/pokemon/${pokemon.name}`
+          // `https://localhost:9000/api/v2/pokemon/${pokemon.name}`
         );
         const data = await res.json();
 
@@ -48,7 +50,7 @@ const App = () => {
           ))}
         </div>
       </div>
-      <button>Load More</button>
+      <button onClick={() => getPokemons()}>Load More</button>
     </div>
   );
 };
