@@ -2,7 +2,7 @@
 >https://github.com/YasminMartinsDeBrito/API-pokemon
 
 - Não esqueça de rodas API no seu PC para ver o projeto funcionando
-- A PORT do seu .env no Front-end deve ser igual o .env do Back-end
+- A PORT do seu no Front-end na pagina Main no 'http://localhost:5000/pokemon' deve ser igual o .env do Back-end
 
 ## 🚀 Deploy da aplicação:
 
