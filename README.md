@@ -41,7 +41,7 @@ As seguintes ferramentas foram usadas na construção do desafio:
 | Desenvolvimento       | Bibliotecas           | Padronização Código  |
 | ------------- |:-------------:| -----:|
 | ReactJs      | Chakra-UI | Prettier |
-| JavaScript      | Styled-components      |   --   |
+| JavaScript      | --      |   --   |
 |       --        |Axios|         --     | 
 
 ## :package: Rodando a aplicação localmente:
