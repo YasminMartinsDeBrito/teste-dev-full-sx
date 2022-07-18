@@ -7,12 +7,11 @@ import { Box, Flex } from "@chakra-ui/react";
 import Header from "../Header";
 import Pokeinfo from "../Pokeinfo";
 import Search from "../Search";
-import env from "react-dotenv";
 
 const Main = () => {
   const [pokeData, setPokeData] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [url, setUrl] = useState(`http://localhost:${env.PORT}/pokemon`);
+  const [url, setUrl] = useState(`http://localhost:5000/pokemon`);
   const [nextPage, setNextPage] = useState();
   const [prevPage, setPrevPage] = useState();
   const [pokeDex, setPokeDex] = useState();
