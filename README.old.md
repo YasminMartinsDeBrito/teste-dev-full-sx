@@ -47,7 +47,7 @@ Seja bem vindo ao teste para Fullstack da **SimbioX** 💙
 
 
 <!-- Back end -->
->Fazer uma API que tem apenas uma rota GET
+<!-- >Fazer uma API que tem apenas uma rota GET -->
  ###### 🥰 Diferenciais
  - Conectar no Sharepoint e obter isso de uma lista, e ter mais um método que insira novos pokemons.
 
@@ -64,13 +64,13 @@ Seja bem vindo ao teste para Fullstack da **SimbioX** 💙
   <!-- - Criar um filtro para busca por nome e espécie; -->
   <!-- - O projeto precisa ser responsivo; -->
   - Desenvolver em TypeScript;
-  - Criar uma página de perfil para os personagens;
+  <!-- - Criar uma página de perfil para os personagens; -->
 
 ## 💻 Instruções para entrega do projeto:
 
 <!-- - Desenvolva e versione esse projeto usando git. -->
-- Crie um README com instruções claras sobre como executar seu projeto.
+<!-- - Crie um README com instruções claras sobre como executar seu projeto. -->
   ###### 🥰 Diferenciais
-  - Hospedar a página (Github, Vercel, Netlify, Heroku, ou de sua prefe
+  <!-- - Hospedar a página (Github, Vercel, Netlify, Heroku, ou de sua prefe -->
 
 ---

@@ -1,4 +1,4 @@
-import { Avatar, Box, Flex, Image, Stack } from "@chakra-ui/react";
+import { Avatar, Box, Flex, Image,  ListItem, Stack, UnorderedList } from "@chakra-ui/react";
 import React from "react";
 
 const Pokeinfo = ({ data }) => {
@@ -9,6 +9,7 @@ const Pokeinfo = ({ data }) => {
       ) : (
         <Flex
           border="1px solid #000"
+          bg="#a5fe3065"
           borderRadius="10px"
           w="90vw"
           fontSize="10px"
@@ -45,15 +46,24 @@ const Pokeinfo = ({ data }) => {
             listStyleType="none"
             flexWrap="wrap"
           >
-            {data.stats.map((poke, index) => (
+            <UnorderedList display='flex'
+            justifyContent='space-evenly'
+            flexWrap='wrap'
+            >
+              {data.stats.map((poke, index) => (
               <h3 key={index}>
-                <li>
-                  {"  "}
+                <ListItem
+                m='5px'
+                p='8px'
+                listStyleType='none'
+                bg='#88cffbba'
+                >
                   {poke.stat.name} : {poke.base_stat}
-                  {"  "}
-                </li>
+                </ListItem>
               </h3>
             ))}
+            </UnorderedList>
+            
           </Box>
         </Flex>
       )}

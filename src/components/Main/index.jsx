@@ -52,12 +52,9 @@ const Main = () => {
     pokemon();
   }, [url]);
 
-  console.log(filter);
-
   return (
     <>
       <Header
-        bg="#439f"
         nextPage={nextPage}
         prevPage={prevPage}
         setPokeData={setPokeData}
@@ -68,34 +65,38 @@ const Main = () => {
       />
 
       <Flex
-        h="100%"
+        h="100vw"
         ml={["5vw", "20px"]}
         mr={["0", "20px"]}
+        display="flex"
         wrap="wrap"
         justify="center"
-        align="center"
-        flexDirection="row"
       >
         {search !== "" ? (
-          <Search
-            setSearch={setSearch}
-            filters={filter}
-            infoPokemon={(p) => setPokeDex(p)}
-          />
-        ) : (
-          <Box>
-            <Card
-              pokemon={pokeData}
-              loading={loading}
+          <>
+            <Box m="10px">
+              <Pokeinfo data={pokeDex} />
+            </Box>
+            <Search
+              setSearch={setSearch}
+              filters={filter}
               infoPokemon={(p) => setPokeDex(p)}
             />
-            <Box className="right-content">
-          <Pokeinfo data={pokeDex} />
-        </Box>
-          </Box>
+          </>
+        ) : (
+          <>
+            <Box>
+              <Pokeinfo data={pokeDex} />
+            </Box>
+            <Box>
+              <Card
+                pokemon={pokeData}
+                loading={loading}
+                infoPokemon={(p) => setPokeDex(p)}
+              />
+            </Box>
+          </>
         )}
-        
-
       </Flex>
     </>
   );

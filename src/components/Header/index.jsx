@@ -68,6 +68,7 @@ const Header = ({
               border="none"
               p="10px"
               m="5px"
+              borderRadius='6px'
               onClick={() => showPokemon(search)}
             >
               Pesquisar

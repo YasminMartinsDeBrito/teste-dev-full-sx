@@ -1,4 +1,4 @@
-import { Box, Image, Stack, Avatar } from "@chakra-ui/react";
+import { Box, Image, Stack, Avatar, Container } from "@chakra-ui/react";
 
 const Card = ({ pokemon, loading, infoPokemon }) => {
   return (
@@ -6,15 +6,18 @@ const Card = ({ pokemon, loading, infoPokemon }) => {
       {loading ? (
         <h1>Loading...</h1>
       ) : (
-        <ul>
+        <Container 
+        m='10px'
+        display='flex'
+        flexWrap='wrap'
+        justifyContent='center'>
           {pokemon.map((item, index) => (
             <Box
               key={index}
-              background="#E5E5E5"
-              boxShadow="7px 7px 7px 0px rgba(0,0,0,0.22)"
+              bg='#a0ff948a'
+              boxShadow="7px 7px 7px 0px #a6b1a5cc"
               h="350px"
               w="200px"
-              rounded="lg"
               m="15px"
               padding="5px"
               color="green.200"
@@ -22,7 +25,7 @@ const Card = ({ pokemon, loading, infoPokemon }) => {
               fontWeight={800}
             >
               
-              <Box width="100%" margin="0px auto">
+              <Box >
                 {item.img ? (
                   <Stack direction="column">
                     <Avatar src="" alt="" />
@@ -51,7 +54,7 @@ const Card = ({ pokemon, loading, infoPokemon }) => {
               <button onClick={() => infoPokemon(item)}>Detail</button>
             </Box>
           ))}
-        </ul>
+        </Container>
       )}
     </>
   );
