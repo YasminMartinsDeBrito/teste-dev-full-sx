@@ -50,7 +50,7 @@ $ yarn install
 $yarn start
 
 ## 🚀 Deploy da aplicação:
- - <a href="https://teste-dev-full-sx.vercel.app" >Vercel</a>
+ - <a href="https://teste-dev-full-sx.vercel.app" target="_blank" >Vercel</a>
 
 ## 💻 Desenvolvido por:
   
