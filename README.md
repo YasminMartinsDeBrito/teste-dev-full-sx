@@ -1,6 +1,8 @@
 ## Api Pokemon Back-end
 >https://github.com/YasminMartinsDeBrito/API-pokemon
 
+## 🚀 Deploy da aplicação:
+ - <a href="https://teste-dev-full-sx.vercel.app" target="_blank" >Vercel</a>
 
 
 # Aplicação Front-end 
@@ -57,8 +59,6 @@ $ yarn install
 ## Rode a aplicação
 $ yarn start
 
-## 🚀 Deploy da aplicação:
- - <a href="https://teste-dev-full-sx.vercel.app" target="_blank" >Vercel</a>
 
 ## 💻 Desenvolvido por:
   
