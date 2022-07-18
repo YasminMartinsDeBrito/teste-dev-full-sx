@@ -42,14 +42,12 @@ As seguintes ferramentas foram usadas na construção do desafio:
 | ------------- |:-------------:| -----:|
 | ReactJs      | Chakra-UI | Prettier |
 | JavaScript      | Styled-components      |   --   |
-|       --        |Axios|         --     |
-|   --    | -- |      --        |   
-|    --   | -- |        --      |     
+|       --        |Axios|         --     | 
 
 ## :package: Rodando a aplicação localmente:
 
 # Abra um terminal e clone este repositorio
-$ git clone [(https://github.com/YasminMartinsDeBrito/teste-dev-full-sx)]
+$ git clone https://github.com/YasminMartinsDeBrito/teste-dev-full-sx
 
 ## Acesse a pasta do projeto no seu terminal/cmd
 $ cd teste-dev-full-sx
