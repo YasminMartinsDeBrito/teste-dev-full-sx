@@ -1,35 +1,61 @@
+import { Avatar, Box, Flex, Image, Stack } from "@chakra-ui/react";
+import React from "react";
 
 const Pokeinfo = ({ data }) => {
   return (
     <>
       {!data ? (
-        "Nao tem nada"
+        ""
       ) : (
-        <>
-          <h1>{data.name}</h1>
-          <img
-            // src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/${data.id}.png`}
-            src={data.img}
-            alt={data.name}
-          />
-          <div>
-            {data.abilities.map((pokemon) => (
-              <>
-                <div>
-                  <h2>{pokemon.ability.name}</h2>
-                </div>
-              </>
-            ))}
-          </div>
+        <Flex
+          border="1px solid #000"
+          borderRadius="10px"
+          w="90vw"
+          fontSize="10px"
+          display="flex"
+          flexDirection="column"
+          alignItems="center"
+          justifyContent="center"
+        >
+          <Box textAlign="center">
+            <h1>{data.name}</h1>
+            {data.img ? (
+              <Stack direction="column">
+                <Avatar src="" alt="" />
+              </Stack>
+            ) : (
+              <Image
+                src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${data.id}.svg`}
+                alt=""
+              />
+            )}
+          </Box>
 
-          <div>
-            {data.stats.map((pokemon) => (
-              <h3>
-                {pokemon.stats.name}:{pokemon.base_stat}
+          <Box listStyleType="none" display="flex" flexDirection="column">
+            {data.abilities.map((poke, index) => (
+              <div key={index} className="group">
+                <li> Ability : {poke.ability.name} </li>
+              </div>
+            ))}
+          </Box>
+          <Box
+            display="flex"
+            margin="5px"
+            textAlign="center"
+            listStyleType="none"
+            flexWrap="wrap"
+          >
+            {data.stats.map((poke, index) => (
+              <h3 key={index}>
+                <li>
+                  {"  "}
+                  {poke.stat.name} : {poke.base_stat}
+                  {"  "}
+                </li>
               </h3>
             ))}
-          </div>
-        </>
+          </Box>
+        </Flex>
       )}
     </>
   );

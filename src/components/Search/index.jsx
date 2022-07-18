@@ -1,13 +1,13 @@
-import { Box, Image, Stack, Avatar } from "@chakra-ui/react";
+import { Avatar, Box, Button, Image, Stack } from "@chakra-ui/react";
 
-const Card = ({ pokemon, loading, infoPokemon }) => {
+const Search = ({ loading, filters, infoPokemon }) => {
   return (
     <>
       {loading ? (
         <h1>Loading...</h1>
       ) : (
-        <ul>
-          {pokemon.map((item, index) => (
+        <>
+          {filters.map((poke, index) => (
             <Box
               key={index}
               background="#E5E5E5"
@@ -21,9 +21,8 @@ const Card = ({ pokemon, loading, infoPokemon }) => {
               borderRadius="8px"
               fontWeight={800}
             >
-              
               <Box width="100%" margin="0px auto">
-                {item.img ? (
+                {poke.img ? (
                   <Stack direction="column">
                     <Avatar src="" alt="" />
                   </Stack>
@@ -36,25 +35,24 @@ const Card = ({ pokemon, loading, infoPokemon }) => {
                     w="180px"
                     h="160px"
                     display="flex"
-                    src={item.sprites.front_default}
+                    src={poke.sprites.front_default}
                     alt=""
                   />
                 )}
               </Box>
 
-              <Box fontSize="12px">
-                <small>id: {item.id}</small>
-                <h3>Nome: {item.name}</h3>
-                <p>Peso: {item.weight}</p>
-                <p>Altura: {item.height}</p>
+              <Box fontSize="12px" display="flex" flexDirection="column">
+                <small>id: {poke.id}</small>
+                <h3>Nome: {poke.name}</h3>
+                <p>Peso: {poke.weight}</p>
+                <p>Altura: {poke.height}</p>
               </Box>
-              <button onClick={() => infoPokemon(item)}>Detail</button>
+              <button onClick={() => infoPokemon(poke)}>Detail</button>
             </Box>
           ))}
-        </ul>
+        </>
       )}
     </>
   );
 };
-
-export default Card;
+export default Search;

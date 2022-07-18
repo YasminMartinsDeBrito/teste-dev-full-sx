@@ -60,9 +60,9 @@ Seja bem vindo ao teste para Fullstack da **SimbioX** 💙
 
   - Paginação com 10 itens por página;
   <!-- - Cards com id, nome, imagem, titulo; -->
-  - Tratar os itens sem imagens, utilizando imagem padrão;
-  - Criar um filtro para busca por nome e espécie;
-  - O projeto precisa ser responsivo;
+  <!-- - Tratar os itens sem imagens, utilizando imagem padrão; -->
+  <!-- - Criar um filtro para busca por nome e espécie; -->
+  <!-- - O projeto precisa ser responsivo; -->
   - Desenvolver em TypeScript;
   - Criar uma página de perfil para os personagens;
 
