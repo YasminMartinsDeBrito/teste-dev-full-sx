@@ -6,7 +6,7 @@
 
 ## 🚀 Deploy da aplicação:
 
- - <a href="https://teste-dev-full-sx.vercel.app" target="_blank" >Vercel</a>
+ - <a href="https://teste-dev-full-sx.vercel.app/" target="__blank" >Vercel</a>
 
 
 # Aplicação Front-end 
