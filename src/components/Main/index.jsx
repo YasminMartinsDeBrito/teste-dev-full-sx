@@ -2,7 +2,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 
 import Card from "../Card";
-import { Box, Button, Flex } from "@chakra-ui/react";
+import { Box, Flex } from "@chakra-ui/react";
 import Header from "../Header";
 import Pokeinfo from "../Pokeinfo";
 import Search from "../Search";
@@ -62,12 +62,10 @@ const Main = () => {
         prevPage={prevPage}
         setPokeData={setPokeData}
         setUrl={setUrl}
+        setSearch={setSearch}
+        showPokemon={showPokemon}
+        search={search}
       />
-      <input
-        placeholder="Pesquise aqui seu pokemon"
-        onChange={(event) => setSearch(event.target.value)}
-      />
-      <Button onClick={() => showPokemon(search)}>Pesquisar</Button>
 
       <Flex
         h="100%"
@@ -91,12 +89,13 @@ const Main = () => {
               loading={loading}
               infoPokemon={(p) => setPokeDex(p)}
             />
-          </Box>
-        )}
-
-        <Box className="right-content">
+            <Box className="right-content">
           <Pokeinfo data={pokeDex} />
         </Box>
+          </Box>
+        )}
+        
+
       </Flex>
     </>
   );

@@ -1,4 +1,4 @@
-import { Avatar, Box, Image, Stack } from "@chakra-ui/react";
+import { Avatar, Box, Button, Image, Stack } from "@chakra-ui/react";
 
 const Search = ({ loading, filters, infoPokemon }) => {
   return (
@@ -21,7 +21,6 @@ const Search = ({ loading, filters, infoPokemon }) => {
               borderRadius="8px"
               fontWeight={800}
             >
-              <button onClick={() => infoPokemon(poke)}>Detail</button>
               <Box width="100%" margin="0px auto">
                 {poke.img ? (
                   <Stack direction="column">
@@ -42,12 +41,13 @@ const Search = ({ loading, filters, infoPokemon }) => {
                 )}
               </Box>
 
-              <Box fontSize="12px">
+              <Box fontSize="12px" display="flex" flexDirection="column">
                 <small>id: {poke.id}</small>
                 <h3>Nome: {poke.name}</h3>
                 <p>Peso: {poke.weight}</p>
                 <p>Altura: {poke.height}</p>
               </Box>
+              <button onClick={() => infoPokemon(poke)}>Detail</button>
             </Box>
           ))}
         </>

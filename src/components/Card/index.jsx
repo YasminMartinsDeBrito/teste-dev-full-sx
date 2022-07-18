@@ -21,7 +21,7 @@ const Card = ({ pokemon, loading, infoPokemon }) => {
               borderRadius="8px"
               fontWeight={800}
             >
-              <button onClick={() => infoPokemon(item)}>Detail</button>
+              
               <Box width="100%" margin="0px auto">
                 {item.img ? (
                   <Stack direction="column">
@@ -48,6 +48,7 @@ const Card = ({ pokemon, loading, infoPokemon }) => {
                 <p>Peso: {item.weight}</p>
                 <p>Altura: {item.height}</p>
               </Box>
+              <button onClick={() => infoPokemon(item)}>Detail</button>
             </Box>
           ))}
         </ul>
