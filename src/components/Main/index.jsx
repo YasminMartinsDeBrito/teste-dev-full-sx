@@ -2,9 +2,10 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 
 import Card from "../Card";
-import { Box, Flex } from "@chakra-ui/react";
+import { Box, Button, Flex } from "@chakra-ui/react";
 import Header from "../Header";
 import Pokeinfo from "../Pokeinfo";
+import Search from "../Search";
 
 const Main = () => {
   const [pokeData, setPokeData] = useState([]);
@@ -13,6 +14,17 @@ const Main = () => {
   const [nextPage, setNextPage] = useState();
   const [prevPage, setPrevPage] = useState();
   const [pokeDex, setPokeDex] = useState();
+  const [search, setSearch] = useState("");
+  const [filter, setFilter] = useState(pokeData);
+
+  const showPokemon = (pokemons) => {
+    setSearch(pokemons);
+    setFilter(
+      pokeData.filter((pokemon) =>
+        pokemon.name.toUpperCase().includes(pokemons.toUpperCase())
+      )
+    );
+  };
 
   const pokemon = async () => {
     setLoading(true);
@@ -35,19 +47,27 @@ const Main = () => {
       });
     });
   };
+
   useEffect(() => {
     pokemon();
   }, [url]);
 
+  console.log(filter);
+
   return (
     <>
       <Header
-      bg='#439f'
+        bg="#439f"
         nextPage={nextPage}
         prevPage={prevPage}
         setPokeData={setPokeData}
         setUrl={setUrl}
       />
+      <input
+        placeholder="Pesquise aqui seu pokemon"
+        onChange={(event) => setSearch(event.target.value)}
+      />
+      <Button onClick={() => showPokemon(search)}>Pesquisar</Button>
 
       <Flex
         h="100%"
@@ -58,13 +78,21 @@ const Main = () => {
         align="center"
         flexDirection="row"
       >
-        <Box>
-          <Card
-            pokemon={pokeData}
-            loading={loading}
+        {search !== "" ? (
+          <Search
+            setSearch={setSearch}
+            filters={filter}
             infoPokemon={(p) => setPokeDex(p)}
           />
-        </Box>
+        ) : (
+          <Box>
+            <Card
+              pokemon={pokeData}
+              loading={loading}
+              infoPokemon={(p) => setPokeDex(p)}
+            />
+          </Box>
+        )}
 
         <Box className="right-content">
           <Pokeinfo data={pokeDex} />
