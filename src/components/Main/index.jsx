@@ -2,6 +2,8 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 
 import Card from "../Card";
+import { Box, Flex } from "@chakra-ui/react";
+import Header from "../Header";
 import Pokeinfo from "../Pokeinfo";
 
 const Main = () => {
@@ -28,7 +30,7 @@ const Main = () => {
       setPokeData((state) => {
         state = [...state, poke.data];
         state.sort((a, b) => (a.id > b.id ? 1 : -1));
-        
+
         return state;
       });
     });
@@ -39,37 +41,35 @@ const Main = () => {
 
   return (
     <>
-      <Card
-        pokemon={pokeData}
-        loading={loading}
-        infoPokemon={(p) => setPokeDex(p)}
+      <Header
+      bg='#439f'
+        nextPage={nextPage}
+        prevPage={prevPage}
+        setPokeData={setPokeData}
+        setUrl={setUrl}
       />
 
-      <div>
-        {prevPage && (
-          <button
-            onClick={() => {
-              setPokeData([]);
-              setUrl(prevPage);
-            }}
-          >
-            Previous
-          </button>
-        )}
-        {nextPage && (
-          <button
-            onClick={() => {
-              setPokeData([]);
-              setUrl(nextPage);
-            }}
-          >
-            Next
-          </button>
-        )}
-      </div>
-      <div>
-        <Pokeinfo data={pokeDex} />
-      </div>
+      <Flex
+        h="100%"
+        ml={["5vw", "20px"]}
+        mr={["0", "20px"]}
+        wrap="wrap"
+        justify="center"
+        align="center"
+        flexDirection="row"
+      >
+        <Box>
+          <Card
+            pokemon={pokeData}
+            loading={loading}
+            infoPokemon={(p) => setPokeDex(p)}
+          />
+        </Box>
+
+        <Box className="right-content">
+          <Pokeinfo data={pokeDex} />
+        </Box>
+      </Flex>
     </>
   );
 };

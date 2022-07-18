@@ -1,33 +1,34 @@
+import React from "react";
 
 const Pokeinfo = ({ data }) => {
   return (
     <>
       {!data ? (
-        "Nao tem nada"
+        ""
       ) : (
         <>
           <h1>{data.name}</h1>
           <img
-            // src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/${data.id}.png`}
-            src={data.img}
-            alt={data.name}
+            src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${data.id}.svg`}
+            alt=""
           />
-          <div>
-            {data.abilities.map((pokemon) => (
-              <>
-                <div>
-                  <h2>{pokemon.ability.name}</h2>
-                </div>
-              </>
-            ))}
+          <div className="abilities">
+            {data.abilities.map((poke, index) => {
+              return (
+                  <div key={index}className="group">
+                    <h2>{poke.ability.name}</h2>
+                  </div>
+              );
+            })}
           </div>
-
-          <div>
-            {data.stats.map((pokemon) => (
-              <h3>
-                {pokemon.stats.name}:{pokemon.base_stat}
-              </h3>
-            ))}
+          <div className="base-stat">
+            {data.stats.map((poke, index) => {
+              return (
+                  <h3 key={index}>
+                    {poke.stat.name}:{poke.base_stat}
+                  </h3>
+              );
+            })}
           </div>
         </>
       )}
