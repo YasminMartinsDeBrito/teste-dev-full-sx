@@ -2,6 +2,7 @@
 >https://github.com/YasminMartinsDeBrito/API-pokemon
 
 ## 🚀 Deploy da aplicação:
+** Não esqueça de rodas API no seu PC para ver o projeto funcionando
  - <a href="https://teste-dev-full-sx.vercel.app" target="_blank" >Vercel</a>
 
 
@@ -40,15 +41,13 @@ As seguintes ferramentas foram usadas na construção do desafio:
 | Desenvolvimento       | Bibliotecas           | Padronização Código  |
 | ------------- |:-------------:| -----:|
 | ReactJs      | Chakra-UI | Prettier |
-| JavaScript      | Styled-components      |   --   |
-|       --        |Axios|         --     |
-|   --    | -- |      --        |   
-|    --   | -- |        --      |     
+| JavaScript      | --      |   --   |
+|       --        |Axios|         --     | 
 
 ## :package: Rodando a aplicação localmente:
 
 # Abra um terminal e clone este repositorio
-$ git clone [(https://github.com/YasminMartinsDeBrito/teste-dev-full-sx)]
+$ git clone https://github.com/YasminMartinsDeBrito/teste-dev-full-sx
 
 ## Acesse a pasta do projeto no seu terminal/cmd
 $ cd teste-dev-full-sx
