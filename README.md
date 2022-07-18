@@ -12,18 +12,6 @@ A aplicação terá uma tela principal, contendo uma lista com pokemons.
 <br>
 ### Demonstração em produção:
 <table align='center'>
-<tr>
-<td align='center'>
-    <div>
-        https://user-images.githubusercontent.com/82226623/179500429-903d5b0c-d7ef-495f-befd-796c262c5f67.mp4
-    
-        https://user-images.githubusercontent.com/82226623/179500475-decf807c-8099-4dba-9f62-a58c43f7ab2d.mp4
-   
-        https://user-images.githubusercontent.com/82226623/179501608-9065ef00-a581-454c-bcd3-c86ddd483590.mp4
-    </div>
-    
-</tr>
-    
     <tr>
     <td align='center'>
     <img src="https://user-images.githubusercontent.com/82226623/179501240-454ac11d-05c3-436f-8523-5661db90b4b3.png" alt=""/>
@@ -31,6 +19,14 @@ A aplicação terá uma tela principal, contendo uma lista com pokemons.
 <tr>
     <td align='center'>
     <img src="https://user-images.githubusercontent.com/82226623/179501169-d32ab709-3935-49cb-850b-05bf917ac0a3.png" alt=""/>
+</tr>
+<tr>
+    <td align='center'>
+    <img src="https://user-images.githubusercontent.com/82226623/179503977-ab23d9b1-fac9-4096-a257-d48cd5822e4d.png" alt=""/>
+</tr>
+<tr>
+    <td align='center'>
+    <img src="https://user-images.githubusercontent.com/82226623/179504060-25f165e7-52fd-4335-a838-90dfa1ce3f48.png" alt=""/>
 </tr>
 </table>
 
@@ -44,7 +40,7 @@ As seguintes ferramentas foram usadas na construção do desafio:
 | ReactJs      | Chakra-UI | Prettier |
 | JavaScript      | Styled-components      |   --   |
 |       --        |Axios|         --     |
-|   --    | React-Icons |      --        |   
+|   --    | -- |      --        |   
 |    --   | -- |        --      |     
 
 ## :package: Rodando a aplicação localmente:
