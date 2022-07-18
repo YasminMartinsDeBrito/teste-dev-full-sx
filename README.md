@@ -2,6 +2,7 @@
 >https://github.com/YasminMartinsDeBrito/API-pokemon
 
 ## 🚀 Deploy da aplicação:
+** Não esqueça de rodas API no seu PC para ver o projeto funcionando
  - <a href="https://teste-dev-full-sx.vercel.app" target="_blank" >Vercel</a>
 
 
