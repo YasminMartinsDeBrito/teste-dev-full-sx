@@ -1,8 +1,11 @@
 ## Api Pokemon Back-end
 >https://github.com/YasminMartinsDeBrito/API-pokemon
 
+- Não esqueça de rodas API no seu PC para ver o projeto funcionando
+- A PORT do seu .env no Front-end deve ser igual o .env do Back-end
+
 ## 🚀 Deploy da aplicação:
-** Não esqueça de rodas API no seu PC para ver o projeto funcionando
+
  - <a href="https://teste-dev-full-sx.vercel.app" target="_blank" >Vercel</a>
 
 
