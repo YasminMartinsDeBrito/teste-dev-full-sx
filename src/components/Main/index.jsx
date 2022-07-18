@@ -10,7 +10,7 @@ import Search from "../Search";
 const Main = () => {
   const [pokeData, setPokeData] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [url, setUrl] = useState("https://pokeapi.co/api/v2/pokemon");
+  const [url, setUrl] = useState("http://localhost:7000/pokemon");
   const [nextPage, setNextPage] = useState();
   const [prevPage, setPrevPage] = useState();
   const [pokeDex, setPokeDex] = useState();
