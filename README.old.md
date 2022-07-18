@@ -52,13 +52,13 @@ Seja bem vindo ao teste para Fullstack da **SimbioX** 💙
  - Conectar no Sharepoint e obter isso de uma lista, e ter mais um método que insira novos pokemons.
 
 <!-- Front end -->
- Desenvolver uma **_aplicação_** que utilize a **_API_** desenvolvida no **item 1** como fonte dos dados, e exiba isso em uma listagem de cards.
+ <!-- Desenvolver uma **_aplicação_** que utilize a **_API_** desenvolvida no **item 1** como fonte dos dados, e exiba isso em uma listagem de cards. -->
 
-  Exibir cards com dados como **_nome, espécie, imagem, altura e peso_**
+  <!-- Exibir cards com dados como **_nome, espécie, imagem, altura e peso_** -->
 
   ###### 🥰 Diferenciais
 
-  - Paginação com 10 itens por página;
+  <!-- - Paginação com 10 itens por página; -->
   <!-- - Cards com id, nome, imagem, titulo; -->
   <!-- - Tratar os itens sem imagens, utilizando imagem padrão; -->
   <!-- - Criar um filtro para busca por nome e espécie; -->
